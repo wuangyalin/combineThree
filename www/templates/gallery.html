@@ -1,0 +1,10 @@
+<ion-view view-title="Gallery">
+  <ion-content >
+        <ul class="flowGrid" ng-flow-grid="demoGird" min-item-width="200">
+          <li class="flowGridItem" ng-repeat="item in items">
+              <a href=""> <p class="animated zoomInDown"><img ng-src="{{item.img}}"></p></a>
+              <p>{{item.id}}__{{item.name}}</p>
+          </li>
+        </ul>
+  </ion-content>
+</ion-view>

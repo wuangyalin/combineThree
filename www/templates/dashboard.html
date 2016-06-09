@@ -1,0 +1,30 @@
+<ion-view view-title="Dynamic Home">
+
+  <ion-content>
+     <div class="banner">
+       <img src="img/banner.png"/>
+     </div>
+     <div class="grid">
+         <div class="row f_row">
+          <div class="col" ng-click="goto('/3DRoom')">
+           <img src="img/001.png" class="animated zoomInDown"/>
+           <p class="animated swing">3D View</p>
+          </div>
+          <div class="col" ng-click="goto('/app/gallery')">
+           <img src="img/002.png" class="animated zoomInDown"/>
+           <p class="animated swing">Gallery</p>
+          </div>
+         </div>
+          <div class="row sec_row">
+          <div class="col" ng-click="goto('/app/contact')">
+           <img src="img/003.png" class="animated zoomInDown"/>
+           <p class="animated swing">Contact Us</p>
+          </div>
+          <div class="col" ng-click="goto('/app/about')">
+           <img src="img/004.png" class="animated zoomInDown"/>
+           <p class="animated swing">About Us</p>
+          </div>
+         </div>
+     </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view view-title="Dream estates">
+  <ion-content class="list_page">
+    <h3 class="tit_head">Gallery</h3>
+        <ul class="flowGrid" ng-flow-grid="demoGird" min-item-width="200">
+          <li class="flowGridItem" ng-repeat="item in items">
+              <a href=""> <p class="animated zoomInDown"><img ng-src="{{item.img}}"></p></a>
+              <p>{{item.id}}__{{item.name}}</p>
+          </li>
+        </ul>
+  </ion-content>
+</ion-view>

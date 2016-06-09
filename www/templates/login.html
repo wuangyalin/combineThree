@@ -1,0 +1,44 @@
+  <ion-content id="login_back" class="padding" scroll="false">
+    <div class="logo_div">
+     <img src="img/dynamicmoon.png" class="animated bounceInDown"/>
+    </div>
+    <form class="login_form animated bounceInUp">
+        <div id="list_back" class="list list-inset" >
+            <span >Username</span>
+            <label class="item item-input">
+                <i class="icon ion-email placeholder-icon"></i>
+                <input type="text" placeholder="Username" ng-model="data.username">
+            </label>
+            <span >Password</span>
+            <label class="item item-input">
+                <i class="icon ion-locked placeholder-icon"></i>
+                <input type="password" placeholder="Password" ng-model="data.password">
+            </label>
+        </div>
+        <button class="button button-block button-positive animated tada" ng-click="doLogin(data)">
+         Login
+        </button>  
+          <button class="button button-block button-calm icon-left ion-social-facebook animated tada" ng-click="facebookSignIn()">Login With Facebook</button> 
+
+        <div class="row two_btn">
+         <div class="col">
+            <button ng-click="forget_password()" class="button button-block button-positive for_pass animated tada" style="color:white">
+            Forget Password
+            </button>  
+         </div>
+          <div class="col">
+            <a href="#/register" class="button button-block button-positive animated tada" style="color:white">
+            New Register
+            </a>  
+         </div>
+       </div>
+        <div class="row two_btn">
+        <div class="col">
+           <a href="#/app/dashboard" class="button button-block button-clear skip_btn animated tada" style="color:white">
+           Skip
+          </a>  
+        </div>
+      </div>
+    </form>
+  </ion-content>
+

@@ -1,0 +1,52 @@
+<ion-view view-title="Dream estates">
+
+  <ion-content class="padding">
+    <div class="detail_img">
+      <h3 class="price animated fadeInRight">$2,450,000</h3>
+    </div>
+    <div class="item_desc">
+    <h3>Description</h3>
+    <p>
+    Pellentesque sodales aliquam lacus, nec tristique ligula rutrum quis.
+    Vivamus maximus malesuada dignissim. In vitae vulputate odio. Mauris vestibulum magna dui, a vulputate lacus blandit nec. Morbi posuere mi a turpis tempor vulputate. Morbi dapibus volutpat mauris ut tincidunt. Sed accumsan vestibulum eros at imperdiet. Aliquam eros ligula, fermentum ornare varius at, aliquet id magna.
+    Vivamus quis elementum magna.
+    </p>
+    <div class="prop_over">
+     <h3>Property Overview</h3>
+    <ion-list>
+        <ion-item ng-repeat="item in items">
+        <div class="row">
+         <div class="col"><p><i class="ion-record"></i>{{item.property}}</p></div>
+         <div class="col"><p>{{item.num}}</p></div>
+        </div>
+        </ion-item>
+    </ion-list>
+    </div>
+    
+    <div class="locat">
+     <h3>Location</h3>
+      <img src="img/map.png"/>
+    </div>
+    <div class="contact_me">
+      <h3>For any inquiries or questions.. Please contact us</h3>
+       <p><span>Email :</span>sample@sample.com</p>
+       <p><span>Mobile :</span>0069 580 245</p>
+    </div>
+    <div class="simi_prop">
+     <h3>Similar properties</h3>
+        <ion-list>
+            <ion-item ng-repeat="item in similar">
+            <div class="sim_div">
+              <img src="{{item.image}}"/>
+              <h3>$1,450,000</h3>
+            </div>  
+            <p>South Celler Court</p>
+            </ion-item>
+        </ion-list>
+    </div>
+    <a href="#/app/comment" class="button button-block button-positive comm_btn">
+    View Comments
+    </a>
+    </div>
+  </ion-content>
+</ion-view>
